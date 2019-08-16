@@ -1,0 +1,114 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information:  ,  , LIC=3UURA-1KLWW-QIV5M-XK0GJ-LL22J-H3C6N
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.14.0.0
+Toolchain Path:  E:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DARMSTM.DLL V1.65.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.14.0_KEIL
+Dialog DLL:      TARMSTM.DLL V1.64.0.0
+ 
+<h2>Project:</h2>
+C:\Users\黎川\Desktop\as5048-v1.2\1.uvprojx
+Project File Date:  05/15/2019
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling I2C.c...
+System\I2C.h(40): error:  #92: identifier-list parameters may only be used in a function definition
+  void I2C_Simulation_Init(Num_Port);
+System\I2C.h(51): error:  #92: identifier-list parameters may only be used in a function definition
+  void C_I2C_SDA_H(Num_Port);
+System\I2C.h(52): error:  #92: identifier-list parameters may only be used in a function definition
+  void C_I2C_SDA_L(Num_Port);
+System\I2C.h(53): error:  #92: identifier-list parameters may only be used in a function definition
+  void C_I2C_SCL_H(Num_Port);
+System\I2C.h(54): error:  #92: identifier-list parameters may only be used in a function definition
+  void C_I2C_SCL_L(Num_Port);
+System\I2C.c(51): error:  #20: identifier "I2C_SCL4" is undefined
+                         case 4:I2C_SCL_L_4;
+System\I2C.c(75): error:  #147-D: declaration is incompatible with "void I2C_Start(void)" (declared at line 43 of "System\I2C.h")
+  void I2C_Start(u8 Num_Port)
+System\I2C.c(88): error:  #147-D: declaration is incompatible with "void I2C_Stop(void)" (declared at line 44 of "System\I2C.h")
+  void I2C_Stop(u8 Num_Port)
+System\I2C.c(101): error:  #147-D: declaration is incompatible with "void I2C_Ack(void)" (declared at line 45 of "System\I2C.h")
+  void I2C_Ack(u8 Num_Port)
+System\I2C.c(104): warning:  #223-D: function "C_I2C_SDA_OUT" declared implicitly
+     C_I2C_SDA_OUT();
+System\I2C.c(113): error:  #147-D: declaration is incompatible with "void I2C_NAck(void)" (declared at line 46 of "System\I2C.h")
+  void I2C_NAck(u8 Num_Port)
+System\I2C.c(126): error:  #147-D: declaration is incompatible with "u8 I2C_Wait_Ack(void)" (declared at line 47 of "System\I2C.h")
+  u8 I2C_Wait_Ack(u8 Num_Port)
+System\I2C.c(130): warning:  #223-D: function "C_I2C_SDA_IN" declared implicitly
+        C_I2C_SDA_IN();
+System\I2C.c(151): error:  #147-D: declaration is incompatible with "void I2C_Send_Byte(u8)" (declared at line 48 of "System\I2C.h")
+  void I2C_Send_Byte(u8 txd,u8)
+System\I2C.c(151): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+  void I2C_Send_Byte(u8 txd,u8)
+System\I2C.c(156): error:  #20: identifier "Num_Port" is undefined
+        C_I2C_SCL_L(Num_Port);//拉低时钟开始数据传输
+System\I2C.c(175): error:  #147-D: declaration is incompatible with "u8 I2C_Read_Byte(u8)" (declared at line 49 of "System\I2C.h")
+  u8 I2C_Read_Byte(u8 ack,u8 Num_Port)
+System\I2C.c: 2 warnings, 15 errors
+compiling as5600.c...
+System\I2C.h(40): error:  #92: identifier-list parameters may only be used in a function definition
+  void I2C_Simulation_Init(Num_Port);
+System\I2C.h(51): error:  #92: identifier-list parameters may only be used in a function definition
+  void C_I2C_SDA_H(Num_Port);
+System\I2C.h(52): error:  #92: identifier-list parameters may only be used in a function definition
+  void C_I2C_SDA_L(Num_Port);
+System\I2C.h(53): error:  #92: identifier-list parameters may only be used in a function definition
+  void C_I2C_SCL_H(Num_Port);
+System\I2C.h(54): error:  #92: identifier-list parameters may only be used in a function definition
+  void C_I2C_SCL_L(Num_Port);
+System\as5600.c: 0 warnings, 5 errors
+compiling usart.c...
+System\usart.c(201): error:  #29: expected an expression
+                    for(int i = 0;i<11,i++){
+System\usart.c(201): warning:  #174-D: expression has no effect
+                    for(int i = 0;i<11,i++){
+System\usart.c(201): error:  #65: expected a ";"
+                    for(int i = 0;i<11,i++){
+System\usart.c(202): error:  #142: expression must have pointer-to-object type
+                                    BmqDataCount[i] = 0;
+System\usart.c(168): warning:  #550-D: variable "BmqOverFlag" was set but never used
+        u8 BmqOverFlag,BmqStartFlag;            //BmqOverFlag为结束接受数据标志；BmqStartFlag为开始接受数据标志
+System\usart.c(219): error:  #169: expected a declaration
+        if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)  //接收中断(接收到的数据必须是0x0d 0x0a结尾)
+System\usart.c(230): warning: At end of source:  #12-D: parsing restarts here after previous syntax error
+System\usart.c: 3 warnings, 4 errors
+compiling main.c...
+.\System\I2C.h(40): error:  #92: identifier-list parameters may only be used in a function definition
+  void I2C_Simulation_Init(Num_Port);
+.\System\I2C.h(51): error:  #92: identifier-list parameters may only be used in a function definition
+  void C_I2C_SDA_H(Num_Port);
+.\System\I2C.h(52): error:  #92: identifier-list parameters may only be used in a function definition
+  void C_I2C_SDA_L(Num_Port);
+.\System\I2C.h(53): error:  #92: identifier-list parameters may only be used in a function definition
+  void C_I2C_SCL_H(Num_Port);
+.\System\I2C.h(54): error:  #92: identifier-list parameters may only be used in a function definition
+  void C_I2C_SCL_L(Num_Port);
+User\main.c: 0 warnings, 5 errors
+".\Objects\1.axf" - 29 Error(s), 5 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\黎川\Desktop\as5048-v1.2\RTE
+  E:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+</pre>
+</body>
+</html>
